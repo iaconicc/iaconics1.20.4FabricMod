@@ -18,9 +18,9 @@ public class BaseItems{
         IaconicsMod.LOGGER.info("Registering Item-->{}:{}", IaconicsMod.MOD_ID, name);
         pItem = Registry.register(Registries.ITEM, Identifier.of(IaconicsMod.MOD_ID, name), item);
 
-        ItemGroupEvents.modifyEntriesEvent(itemGroup).register(entries ->{
-            entries.add(pItem);
-        });
+        //ItemGroupEvents.modifyEntriesEvent(itemGroup).register(entries ->{
+        //    entries.add(pItem);
+        //});
 
     }
 
