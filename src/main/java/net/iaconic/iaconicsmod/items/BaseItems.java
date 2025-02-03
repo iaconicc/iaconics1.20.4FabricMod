@@ -3,29 +3,28 @@ package net.iaconic.iaconicsmod.items;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.iaconic.iaconicsmod.IaconicsMod;
 import net.minecraft.item.Item;
-import net.minecraft.item.ItemGroups;
+import net.minecraft.item.ItemGroup;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
+import net.minecraft.registry.RegistryKey;
 import net.minecraft.util.Identifier;
 
 
 public class BaseItems{
-    private static Item item;
+    private static Item pItem;
 
-    public BaseItems(String name)
+    public BaseItems(String name, RegistryKey<ItemGroup> itemGroup, Item item)
     {
-        item = Registry.register(Registries.ITEM, Identifier.of(IaconicsMod.MOD_ID, name), new Item(new Item.Settings()));
+        pItem = Registry.register(Registries.ITEM, Identifier.of(IaconicsMod.MOD_ID, name), item);
 
-
-
-        ItemGroupEvents.modifyEntriesEvent(ItemGroups.INGREDIENTS).register(entries ->{
-            entries.add(item);
+        ItemGroupEvents.modifyEntriesEvent(itemGroup).register(entries ->{
+            entries.add(pItem);
         });
 
     }
 
     public Item getItem()
     {
-        return item;
+        return pItem;
     }
 }
