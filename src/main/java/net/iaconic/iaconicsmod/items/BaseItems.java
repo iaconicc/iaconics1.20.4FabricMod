@@ -11,7 +11,7 @@ import net.minecraft.util.Identifier;
 
 
 public class BaseItems{
-    private static Item pItem;
+    private final Item pItem;
 
     public BaseItems(String name, RegistryKey<ItemGroup> itemGroup, Item item)
     {
