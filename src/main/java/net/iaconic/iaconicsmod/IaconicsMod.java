@@ -12,7 +12,6 @@ public class IaconicsMod implements ModInitializer {
 
 	@Override
 	public void onInitialize() {
-
-
+		Items.initialiseAllItems();
 	}
 }

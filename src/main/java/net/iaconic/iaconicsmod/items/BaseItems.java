@@ -15,6 +15,7 @@ public class BaseItems{
 
     public BaseItems(String name, RegistryKey<ItemGroup> itemGroup, Item item)
     {
+        IaconicsMod.LOGGER.info("Registering Item-->{}:{}", IaconicsMod.MOD_ID, name);
         pItem = Registry.register(Registries.ITEM, Identifier.of(IaconicsMod.MOD_ID, name), item);
 
         ItemGroupEvents.modifyEntriesEvent(itemGroup).register(entries ->{
