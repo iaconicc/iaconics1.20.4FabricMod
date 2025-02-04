@@ -1,11 +1,11 @@
 {
 	"schemaVersion": 1,
 	"id": "iaconicsmod",
-	"version": "${version}",
-	"name": "iaconicsMod",
-	"description": "This is an example description! Tell everyone what your mod is about!",
+	"version": "1.0",
+	"name": "iaconic's Mod",
+	"description": "やほー! This is my mod",
 	"authors": [
-		"Me!"
+		"Iaconic"
 	],
 	"contact": {
 		"homepage": "https://fabricmc.net/",
