@@ -2,6 +2,7 @@ package net.iaconic.iaconicsmod.items;
 
 import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroup;
 import net.iaconic.iaconicsmod.IaconicsMod;
+import net.iaconic.iaconicsmod.blocks.Blocks;
 import net.minecraft.item.ItemGroup;
 import net.minecraft.item.ItemStack;
 import net.minecraft.registry.Registries;
@@ -16,9 +17,10 @@ public class CustomItemGroups {
     {
        NewGroup = Registry.register(Registries.ITEM_GROUP, Identifier.of(IaconicsMod.MOD_ID, "newgroup"), FabricItemGroup.builder()
                         .displayName(Text.translatable("itemgroup.iaconicsmod.newgroup"))
-                        .icon(() -> new ItemStack(Items.newItem.getItem()))
+                        .icon(() -> new ItemStack(Items.newItem))
                         .entries((displayContext, entries) ->{
-                            entries.add(Items.newItem.getItem());
+                            entries.add(Items.newItem);
+                            entries.add(Blocks.newBlock);
                         } )
                         .build());
 
