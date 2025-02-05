@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:item/generated",
   "textures": {
-    "layer0": "iaconicsmod:item/newitem"
+    "layer0": "iaconicsmod:item/sapphire_item"
   }
 }

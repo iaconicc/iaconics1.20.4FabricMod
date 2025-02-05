@@ -17,10 +17,11 @@ public class CustomItemGroups {
     {
        NewGroup = Registry.register(Registries.ITEM_GROUP, Identifier.of(IaconicsMod.MOD_ID, "newgroup"), FabricItemGroup.builder()
                         .displayName(Text.translatable("itemgroup.iaconicsmod.newgroup"))
-                        .icon(() -> new ItemStack(Items.newItem))
+                        .icon(() -> new ItemStack(Items.sapphire_item))
                         .entries((displayContext, entries) ->{
-                            entries.add(Items.newItem);
-                            entries.add(Blocks.newBlock);
+                            entries.add(Items.sapphire_item);
+                            entries.add(Blocks.sapphire_block);
+                            entries.add(Blocks.sapphire_ore_block);
                         } )
                         .build());
 

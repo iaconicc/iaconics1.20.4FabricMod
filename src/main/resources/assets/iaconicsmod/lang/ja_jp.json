@@ -1,4 +1,6 @@
 {
-  "item.iaconicsmod.newitem": "空",
-  "block.iaconicsmod.newblock": "空"
+  "item.iaconicsmod.sapphire_item": "サファイア",
+  "block.iaconicsmod.sapphire_block": "サファイアブロック",
+  "itemgroup.iaconicsmod.newgroup": "グループ",
+  "block.iaconicsmod.sapphire_ore_block": "サファイア鉱石"
 }

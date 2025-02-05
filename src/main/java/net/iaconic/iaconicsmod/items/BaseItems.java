@@ -12,6 +12,8 @@ public class BaseItems extends Item{
     public BaseItems(Settings settings, String name) {
         super(settings);
 
+        IaconicsMod.LOGGER.info("Registering base item-->{}:{}", IaconicsMod.MOD_ID, name);
+
         Registry.register(Registries.ITEM, Identifier.of(IaconicsMod.MOD_ID, name), this);
     }
 

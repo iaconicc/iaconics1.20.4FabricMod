@@ -1,5 +1,6 @@
 {
-  "item.iaconicsmod.newitem": "new item",
-  "block.iaconicsmod.newblock": "new block",
-  "itemgroup.iaconicsmod.newgroup": "new group"
+  "item.iaconicsmod.sapphire_item": "Sapphire",
+  "block.iaconicsmod.sapphire_block": "Block of Sapphire",
+  "itemgroup.iaconicsmod.newgroup": "New Group",
+  "block.iaconicsmod.sapphire_ore_block": "Sapphire Ore"
 }
